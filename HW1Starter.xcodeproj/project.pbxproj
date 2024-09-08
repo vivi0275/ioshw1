@@ -8,23 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E8013AD12C8E51CE00AA4F20 /* HW1StarterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8013AD02C8E51CE00AA4F20 /* HW1StarterApp.swift */; };
-		E8013AD32C8E51CE00AA4F20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8013AD22C8E51CE00AA4F20 /* ContentView.swift */; };
 		E8013AD52C8E51CF00AA4F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8013AD42C8E51CF00AA4F20 /* Assets.xcassets */; };
 		E8013AD82C8E51CF00AA4F20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8013AD72C8E51CF00AA4F20 /* Preview Assets.xcassets */; };
-		E8013AE22C8E51CF00AA4F20 /* HW1StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8013AE12C8E51CF00AA4F20 /* HW1StarterTests.swift */; };
-		E8013AEC2C8E51CF00AA4F20 /* HW1StarterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8013AEB2C8E51CF00AA4F20 /* HW1StarterUITests.swift */; };
-		E8013AEE2C8E51CF00AA4F20 /* HW1StarterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8013AED2C8E51CF00AA4F20 /* HW1StarterUITestsLaunchTests.swift */; };
+		E8013AFE2C8E525300AA4F20 /* HW1StarterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8013AD02C8E51CE00AA4F20 /* HW1StarterApp.swift */; };
+		E8013B002C8E52A900AA4F20 /* HW1StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8013AFF2C8E52A900AA4F20 /* HW1StarterTests.swift */; };
+		E8013B022C8E533900AA4F20 /* HW1Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8013B012C8E533900AA4F20 /* HW1Questions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E8013ADE2C8E51CF00AA4F20 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E8013AC52C8E51CE00AA4F20 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E8013ACC2C8E51CE00AA4F20;
-			remoteInfo = HW1Starter;
-		};
-		E8013AE82C8E51CF00AA4F20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E8013AC52C8E51CE00AA4F20 /* Project object */;
 			proxyType = 1;
@@ -36,14 +28,11 @@
 /* Begin PBXFileReference section */
 		E8013ACD2C8E51CE00AA4F20 /* HW1Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW1Starter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8013AD02C8E51CE00AA4F20 /* HW1StarterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW1StarterApp.swift; sourceTree = "<group>"; };
-		E8013AD22C8E51CE00AA4F20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8013AD42C8E51CF00AA4F20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8013AD72C8E51CF00AA4F20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8013ADD2C8E51CF00AA4F20 /* HW1StarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW1StarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8013AE12C8E51CF00AA4F20 /* HW1StarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW1StarterTests.swift; sourceTree = "<group>"; };
-		E8013AE72C8E51CF00AA4F20 /* HW1StarterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW1StarterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8013AEB2C8E51CF00AA4F20 /* HW1StarterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW1StarterUITests.swift; sourceTree = "<group>"; };
-		E8013AED2C8E51CF00AA4F20 /* HW1StarterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW1StarterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8013AFF2C8E52A900AA4F20 /* HW1StarterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HW1StarterTests.swift; sourceTree = "<group>"; };
+		E8013B012C8E533900AA4F20 /* HW1Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW1Questions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +50,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8013AE42C8E51CF00AA4F20 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +58,6 @@
 			children = (
 				E8013ACF2C8E51CE00AA4F20 /* HW1Starter */,
 				E8013AE02C8E51CF00AA4F20 /* HW1StarterTests */,
-				E8013AEA2C8E51CF00AA4F20 /* HW1StarterUITests */,
 				E8013ACE2C8E51CE00AA4F20 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +67,6 @@
 			children = (
 				E8013ACD2C8E51CE00AA4F20 /* HW1Starter.app */,
 				E8013ADD2C8E51CF00AA4F20 /* HW1StarterTests.xctest */,
-				E8013AE72C8E51CF00AA4F20 /* HW1StarterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +74,8 @@
 		E8013ACF2C8E51CE00AA4F20 /* HW1Starter */ = {
 			isa = PBXGroup;
 			children = (
-				E8013AD02C8E51CE00AA4F20 /* HW1StarterApp.swift */,
-				E8013AD22C8E51CE00AA4F20 /* ContentView.swift */,
-				E8013AD42C8E51CF00AA4F20 /* Assets.xcassets */,
+				E8013B012C8E533900AA4F20 /* HW1Questions.swift */,
+				E8013AFB2C8E521E00AA4F20 /* Supporting Files */,
 				E8013AD62C8E51CF00AA4F20 /* Preview Content */,
 			);
 			path = HW1Starter;
@@ -113,18 +92,18 @@
 		E8013AE02C8E51CF00AA4F20 /* HW1StarterTests */ = {
 			isa = PBXGroup;
 			children = (
-				E8013AE12C8E51CF00AA4F20 /* HW1StarterTests.swift */,
+				E8013AFF2C8E52A900AA4F20 /* HW1StarterTests.swift */,
 			);
 			path = HW1StarterTests;
 			sourceTree = "<group>";
 		};
-		E8013AEA2C8E51CF00AA4F20 /* HW1StarterUITests */ = {
+		E8013AFB2C8E521E00AA4F20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E8013AEB2C8E51CF00AA4F20 /* HW1StarterUITests.swift */,
-				E8013AED2C8E51CF00AA4F20 /* HW1StarterUITestsLaunchTests.swift */,
+				E8013AD02C8E51CE00AA4F20 /* HW1StarterApp.swift */,
+				E8013AD42C8E51CF00AA4F20 /* Assets.xcassets */,
 			);
-			path = HW1StarterUITests;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +144,6 @@
 			productReference = E8013ADD2C8E51CF00AA4F20 /* HW1StarterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E8013AE62C8E51CF00AA4F20 /* HW1StarterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E8013AF72C8E51CF00AA4F20 /* Build configuration list for PBXNativeTarget "HW1StarterUITests" */;
-			buildPhases = (
-				E8013AE32C8E51CF00AA4F20 /* Sources */,
-				E8013AE42C8E51CF00AA4F20 /* Frameworks */,
-				E8013AE52C8E51CF00AA4F20 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E8013AE92C8E51CF00AA4F20 /* PBXTargetDependency */,
-			);
-			name = HW1StarterUITests;
-			productName = HW1StarterUITests;
-			productReference = E8013AE72C8E51CF00AA4F20 /* HW1StarterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +158,6 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					E8013ADC2C8E51CF00AA4F20 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = E8013ACC2C8E51CE00AA4F20;
-					};
-					E8013AE62C8E51CF00AA4F20 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = E8013ACC2C8E51CE00AA4F20;
 					};
@@ -221,7 +178,6 @@
 			targets = (
 				E8013ACC2C8E51CE00AA4F20 /* HW1Starter */,
 				E8013ADC2C8E51CF00AA4F20 /* HW1StarterTests */,
-				E8013AE62C8E51CF00AA4F20 /* HW1StarterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,13 +199,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8013AE52C8E51CF00AA4F20 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8013AD32C8E51CE00AA4F20 /* ContentView.swift in Sources */,
+				E8013B022C8E533900AA4F20 /* HW1Questions.swift in Sources */,
 				E8013AD12C8E51CE00AA4F20 /* HW1StarterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,16 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8013AE22C8E51CF00AA4F20 /* HW1StarterTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E8013AE32C8E51CF00AA4F20 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8013AEC2C8E51CF00AA4F20 /* HW1StarterUITests.swift in Sources */,
-				E8013AEE2C8E51CF00AA4F20 /* HW1StarterUITestsLaunchTests.swift in Sources */,
+				E8013AFE2C8E525300AA4F20 /* HW1StarterApp.swift in Sources */,
+				E8013B002C8E52A900AA4F20 /* HW1StarterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +227,6 @@
 			isa = PBXTargetDependency;
 			target = E8013ACC2C8E51CE00AA4F20 /* HW1Starter */;
 			targetProxy = E8013ADE2C8E51CF00AA4F20 /* PBXContainerItemProxy */;
-		};
-		E8013AE92C8E51CF00AA4F20 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E8013ACC2C8E51CE00AA4F20 /* HW1Starter */;
-			targetProxy = E8013AE82C8E51CF00AA4F20 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,42 +448,6 @@
 			};
 			name = Release;
 		};
-		E8013AF82C8E51CF00AA4F20 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2XN7A3Y7GG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = justinwong.HW1StarterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HW1Starter;
-			};
-			name = Debug;
-		};
-		E8013AF92C8E51CF00AA4F20 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2XN7A3Y7GG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = justinwong.HW1StarterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HW1Starter;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -574,15 +474,6 @@
 			buildConfigurations = (
 				E8013AF52C8E51CF00AA4F20 /* Debug */,
 				E8013AF62C8E51CF00AA4F20 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E8013AF72C8E51CF00AA4F20 /* Build configuration list for PBXNativeTarget "HW1StarterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E8013AF82C8E51CF00AA4F20 /* Debug */,
-				E8013AF92C8E51CF00AA4F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
