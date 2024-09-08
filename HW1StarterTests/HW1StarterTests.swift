@@ -70,6 +70,19 @@ final class HW1StarterTests: XCTestCase {
     
     func testGetTreasureCoords1() {
         let treasureMap: [[String]] = [
+                    ["X", "", ""],
+                    ["", "X", "?"],
+                    ["!", "", "X"],
+                ]
+        let treasureSymbols = ["X"]
+        let ans = [(0, 0), (1, 1), (2, 2)]
+        let coords = hw1Questions.getTreasureCoords(fromMap: treasureMap, treasureSymbols: treasureSymbols)
+        
+        assertTreasureCoordsWithRef(userCoords: coords, refCoords: ans)
+    }
+    
+    func testGetTreasureCoords2() {
+        let treasureMap: [[String]] = [
             ["X", "", "c", "A", ""],
             ["", "X", "", "c", "A"],
             ["A", "", "X", "", "c"],
@@ -83,18 +96,18 @@ final class HW1StarterTests: XCTestCase {
         assertTreasureCoordsWithRef(userCoords: coords, refCoords: ans)
     }
     
-    func testGetTreasureCoords2() {
+    func testGetTreasureCoords3() {
         let treasureMap: [[String]] = [
-            ["", "9", "", "$", "", "", "", "", "v", ""],
-            ["$", "v", "9", "@", "$", "", "v", "", "", ""],
-            ["", "$", "", "9", "@", "", "", "v", "", ""],
+            ["", "9", "", "$", "a", "", "", "", "v", "a"],
+            ["$", "v", "9", "@", "$", "", "v", "", "d", ""],
+            ["", "$", "", "9", "@", "", "!", "v", "", ""],
             ["", "@", "", "", "", "v", "", "9", "@", "@"],
-            ["", "$", "", "", "@", "9", "v", "$", "", "@"],
-            ["", "v", "", "", "v", "", "$", "", "9", "v"],
-            ["", "", "v", "@", "", "", "9", "", "$", ""],
+            ["b", "$", "", "", "@", "9", "v", "$", "c", "@"],
+            ["?", "v", "", "b", "v", "", "$", "", "9", "v"],
+            ["", "", "v", "@", "", "a", "9", "", "$", ""],
             ["9", "@", "", "v", "", "@", "$", "v", "@", ""],
             ["v", "", "9", "", "", "v", "9", "", "", "$"],
-            ["@", "v", "", "", "", "@", "", "v", "$", ""]
+            ["@", "v", "", "b", "c", "@", "", "v", "$", "3"]
         ]
 
         let treasureSymbols = ["v", "9", "@", "$"]
@@ -104,7 +117,7 @@ final class HW1StarterTests: XCTestCase {
         assertTreasureCoordsWithRef(userCoords: coords, refCoords: ans)
     }
     
-    func testGetTreasureCoords3() {
+    func testGetTreasureCoords4() {
         let treasureMap: [[String]] = [[], [], []]
         let treasureSymbols = ["v", "9", "@", "$"]
         let ans = [(Int, Int)]()
@@ -114,6 +127,16 @@ final class HW1StarterTests: XCTestCase {
     }
     
     func testCanEscape1() {
+        let instructions: [[HW1Questions.Direction]] = [
+            [.up, .right, .right],                  // Instruction 1: IGNORED because contains '.up'
+            [.right, .right, .right, .left],        // Instruction 2: INVALID because ended up on index 3
+            [.right, .left, .right, .right, .right] // Instruction 3: VALID becuase ended up at index 4 which is where the hole is
+        ]
+        let canEscape = hw1Questions.canEscape(withDirections: instructions, startingIndex: 1, escapeIndex: 4)
+        XCTAssertTrue(canEscape, "Gotten canEscape: \(canEscape). Expected: True")
+    }
+    
+    func testCanEscape2() {
         let instructions: [[HW1Questions.Direction]] = [
             [.down, .right, .left, .up, .left, .right],
             [.right, .left, .left, .left, .right, .right, .right, .left, .right],
@@ -127,7 +150,7 @@ final class HW1StarterTests: XCTestCase {
         XCTAssertTrue(canEscape, "Gotten canEscape: \(canEscape). Expected: True")
     }
     
-    func testCanEscape2() {
+    func testCanEscape3() {
         let instructions: [[HW1Questions.Direction]] = [
             [.right, .left, .right, .left, .left],
             [.right],
@@ -139,7 +162,7 @@ final class HW1StarterTests: XCTestCase {
         XCTAssertFalse(canEscape, "Gotten canEscape: \(canEscape). Expected: False")
     }
     
-    func testCanEscape3() {
+    func testCanEscape4() {
         let instructions: [[HW1Questions.Direction]] = [
             [.up],
             [.down],
@@ -150,7 +173,7 @@ final class HW1StarterTests: XCTestCase {
         XCTAssertTrue(canEscape, "Gotten canEscape: \(canEscape). Expected: True")
     }
     
-    func testCanEscape4() {
+    func testCanEscape5() {
         let instructions: [[HW1Questions.Direction]] = [
             [.right, .right, .right, .up],
             [.right, .right, .right, .right, .left, .down],
@@ -174,3 +197,4 @@ final class HW1StarterTests: XCTestCase {
         }
     }
 }
+
