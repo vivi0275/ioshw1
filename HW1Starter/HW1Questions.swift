@@ -21,19 +21,8 @@ class HW1Questions {
     }
     
     
-    // MARK: - Task 1B. Treasure Hunting
     
-    /// Get all the x, y coordinates of where all the treasures are located. x, y coordinates are zero-indexed.
-    /// - Parameters:
-    ///   - map: 2D grid where each x, y coordinate location contains an arbitrary `String`
-    ///   - treasureSymbols: An array of recognized treasures
-    /// - Returns: An array of tuples representing the x, y coordinate of each found treasure in the map.
-    func getTreasureCoords(fromMap map: [[String]], treasureSymbols: [String]) -> [(Int, Int)] {
-        return []
-    }
-    
-    
-    // MARK: - Task 1C. Escape
+    // MARK: - Task 1B. Escape
     
     enum Direction {
         case left

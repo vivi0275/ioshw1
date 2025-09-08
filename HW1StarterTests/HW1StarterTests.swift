@@ -68,64 +68,6 @@ final class HW1StarterTests: XCTestCase {
         XCTAssertEqual(hw1Questions.getFileNames(for: fileNames, withCount: 1), ans, "File names do not match reference")
     }
     
-    func testGetTreasureCoords1() {
-        let treasureMap: [[String]] = [
-                    ["X", "", ""],
-                    ["", "X", "?"],
-                    ["!", "", "X"],
-                ]
-        let treasureSymbols = ["X"]
-        let ans = [(0, 0), (1, 1), (2, 2)]
-        let coords = hw1Questions.getTreasureCoords(fromMap: treasureMap, treasureSymbols: treasureSymbols)
-        
-        assertTreasureCoordsWithRef(userCoords: coords, refCoords: ans)
-    }
-    
-    func testGetTreasureCoords2() {
-        let treasureMap: [[String]] = [
-            ["X", "", "c", "A", ""],
-            ["", "X", "", "c", "A"],
-            ["A", "", "X", "", "c"],
-            ["", "A", "", "X", ""],
-            ["c", "", "A", "c", "X"]
-        ]
-        let treasureSymbols = ["X", "c", "A"]
-        let ans = [(0, 0), (0, 2), (0, 3), (1, 1), (1, 3), (1, 4), (2, 0), (2, 2), (2, 4), (3, 1), (3, 3), (4, 0), (4, 2), (4, 3), (4, 4)]
-        let coords = hw1Questions.getTreasureCoords(fromMap: treasureMap, treasureSymbols: treasureSymbols)
-        
-        assertTreasureCoordsWithRef(userCoords: coords, refCoords: ans)
-    }
-    
-    func testGetTreasureCoords3() {
-        let treasureMap: [[String]] = [
-            ["", "9", "", "$", "a", "", "", "", "v", "a"],
-            ["$", "v", "9", "@", "$", "", "v", "", "d", ""],
-            ["", "$", "", "9", "@", "", "!", "v", "", ""],
-            ["", "@", "", "", "", "v", "", "9", "@", "@"],
-            ["b", "$", "", "", "@", "9", "v", "$", "c", "@"],
-            ["?", "v", "", "b", "v", "", "$", "", "9", "v"],
-            ["", "", "v", "@", "", "a", "9", "", "$", ""],
-            ["9", "@", "", "v", "", "@", "$", "v", "@", ""],
-            ["v", "", "9", "", "", "v", "9", "", "", "$"],
-            ["@", "v", "", "b", "c", "@", "", "v", "$", "3"]
-        ]
-
-        let treasureSymbols = ["v", "9", "@", "$"]
-        let ans = [(0, 1), (0, 3), (0, 8), (1, 0), (1, 1), (1, 2), (1, 3), (1, 4), (1, 6), (2, 1), (2, 3), (2, 4), (2, 7), (3, 1), (3, 5), (3, 7), (3, 8), (3, 9), (4, 1), (4, 4), (4, 5), (4, 6), (4, 7), (4, 9), (5, 1), (5, 4), (5, 6), (5, 8), (5, 9), (6, 2), (6, 3), (6, 6), (6, 8), (7, 0), (7, 1), (7, 3), (7, 5), (7, 6), (7, 7), (7, 8), (8, 0), (8, 2), (8, 5), (8, 6), (8, 9), (9, 0), (9, 1), (9, 5), (9, 7), (9, 8)]
-        let coords = hw1Questions.getTreasureCoords(fromMap: treasureMap, treasureSymbols: treasureSymbols)
-        
-        assertTreasureCoordsWithRef(userCoords: coords, refCoords: ans)
-    }
-    
-    func testGetTreasureCoords4() {
-        let treasureMap: [[String]] = [[], [], []]
-        let treasureSymbols = ["v", "9", "@", "$"]
-        let ans = [(Int, Int)]()
-        let coords = hw1Questions.getTreasureCoords(fromMap: treasureMap, treasureSymbols: treasureSymbols)
-        
-        assertTreasureCoordsWithRef(userCoords: coords, refCoords: ans)
-    }
-    
     func testCanEscape1() {
         let instructions: [[HW1Questions.Direction]] = [
             [.up, .right, .right],                  // Instruction 1: IGNORED because contains '.up'
